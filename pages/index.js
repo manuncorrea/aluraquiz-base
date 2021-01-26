@@ -1,14 +1,16 @@
+import React from 'react';
 import styled from 'styled-components';
-import db from '../db.json';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 
+import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHuberCorner from '../src/components/GitHubCorner';
 
-
-/*const BackgroundImage = styled.div`
+/* const BackgroundImage = styled.div`
   background-image: url(${db.bg});
   flex: 1;
   background-size: cover;
@@ -26,19 +28,42 @@ export const QuizContainer = styled.div`
   }
 `;
 
-
-
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+  console.log('chamando use state', name, setName);
+
   return (
-    <QuizBackground  backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>AluraQuiz - Modelo Base</title>
+      </Head>
       <QuizContainer>
         <QuizLogo />
+
         <Widget>
           <Widget.Header>
-             <h1>The legen of React</h1>
+            <h1>The legen of React</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>lorem ispum dolor sit amet...</p>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo submissão por meio do react');
+            }}
+            >
+              <input
+                onChange={function (infosDoEvento) {
+                  console.log(infosDoEvento.target.value);
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="Digite seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+                {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
@@ -48,9 +73,10 @@ export default function Home() {
             <p>lorem ispum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
+
         <Footer />
       </QuizContainer>
-      <GitHuberCorner projectUrl={"https://github.com/manuncorrea"}/>
+      <GitHuberCorner projectUrl="https://github.com/manuncorrea" />
     </QuizBackground>
   );
 }
