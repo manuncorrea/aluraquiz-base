@@ -1,28 +1,55 @@
 {
   "bg": "https://blog.rocketseat.com.br/content/images/2019/03/React-Hooks-Comoutilizar--motivac-o-es-eexemplos-pra-ticos.png",
-  "title": "Quiz CSS da Alura",
+  "title": "Quiz ReactJs",
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "title": "Qual método não faz parte do ReactDOM?",
+      "description": "",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "ReactDOM.destroy ()",
+        "ReactDOM.hydrate ()",
+        "ReactDOM.createPortal ()",
+        "ReactDOM.findDOMNode ()"
       ]
     },
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "title": "Qual é a maneira certa de acessar uma função fetch () de um elemento h1 em JSX?",
+      "description": "",
+      "answer": 1,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "<h1> {fetch ()} </h1>",
+         "<h1> $ {fetch ()} </h1>",
+         "<h1> {fetch} </h1>",
+         "<h1> $ {fetch} </h1>"
+      ]
+    },
+
+    {
+      "image": "https://media.giphy.com/media/26tneSGWphvmFlUju/giphy.gif",
+      "title": "Qual dos métodos a seguir em um Componente React deve ser substituído para interromper a atualização do componente?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+         "willComponentUpdate",
+         "shouldComponentUpdate",
+         "componentDidUpdate",
+         "componentDidMount"
+      ]
+    },
+
+    {
+      "image": "https://media.giphy.com/media/fDTrGliS5iIX6/giphy.gif",
+      "title": "O que é ReactJS?",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+         "Estrutura do lado do servidor",
+         "Estrutura da interface do usuário",
+         " Biblioteca para construção de interfaces de interação"
       ]
     }
   ],
