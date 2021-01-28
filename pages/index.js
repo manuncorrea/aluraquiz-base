@@ -58,7 +58,7 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quiz React Native</h1>
+            <h1>Quiz da Galera</h1>
             <p>lorem ispum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
