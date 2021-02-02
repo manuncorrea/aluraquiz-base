@@ -5,21 +5,21 @@
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Qual método não faz parte do ReactDOM?",
+      "title": "Quais são as vantagens do ReactJS?",
       "description": "",
-      "answer": 1,
+      "answer": 3,
       "alternatives": [
-        "ReactDOM.destroy ()",
-        "ReactDOM.hydrate ()",
-        "ReactDOM.createPortal ()",
-        "ReactDOM.findDOMNode ()"
+        "Aumenta o desempenho do aplicativo com Virtual DOM",
+        "JSX cria um código fácil de ler e escrever",
+        "Ele renderiza tanto no lado do cliente quanto no servidor",
+        "Todas as anteriores estão corretas"
       ]
     },
     {
       "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
       "title": "Qual é a maneira certa de acessar uma função fetch () de um elemento h1 em JSX?",
       "description": "",
-      "answer": 1,
+      "answer": 0,
       "alternatives": [
          "<h1> {fetch ()} </h1>",
          "<h1> $ {fetch ()} </h1>",
@@ -45,7 +45,7 @@
       "image": "https://media.giphy.com/media/fDTrGliS5iIX6/giphy.gif",
       "title": "O que é ReactJS?",
       "description": "",
-      "answer": 1,
+      "answer": 2,
       "alternatives": [
          "Estrutura do lado do servidor",
          "Estrutura da interface do usuário",
@@ -54,7 +54,14 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://quiz-next-js.rodrigoandradebcc.vercel.app/"
+  ],
+
+  "resultado":[
+    {
+      "imagem": "https://media.giphy.com/media/YnBntKOgnUSBkV7bQH/giphy.gif"
+    }
   ],
 
   "theme": {
